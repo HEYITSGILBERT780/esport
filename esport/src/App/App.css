@@ -1,17 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans:300');
+
 .App {
   text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #34495e;
 }
 
-.home {
-    text-align: center;
+/***** Home Page *****/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.gamesList {
+.homeTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+}
+
+.homeTitle h1, p {
+    margin: 0;
+}
+
+.homeTitle p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* Home Page Game Section */
+.gamesList {
+    width: 60%;
+}
+
+.gamesList > h2{
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.gameSection {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    /*background-color: #34495e;*/
+    /*color: #fff;*/
+}
+
+.gameSection div button {
+    margin: 0 10px 10px 10px;
+    background-color: #34495e;
+    border: 1px solid #34495e;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+
+.gameSection div a {
+    text-decoration: none;
 }
 
 /*.App-logo {*/

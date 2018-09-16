@@ -4,12 +4,19 @@ import GameSection from '../components/GameSection';
 class Home extends Component {
     render() {
         return (
-            <div className="home">
-                <h1>Esports Player Hub</h1>
+            <div className="flex-container">
+                {/* Home page title section */}
+                <div className="homeTitle">
+                    <h1>Esports Player Hub</h1>
+                    <p>Providing player info for various esports titles</p>
+                </div>
+                
+                {/* Section menu for each game */}
                 <div className="gamesList">
-                    <GameSection title="League of Legends" />
-                    <GameSection title="Overwatch" />
-                    <GameSection title="Dota 2" />
+                    <h2>Games List</h2>
+                    <GameSection title="League of Legends" gameId="LoL"/>
+                    <GameSection title="Overwatch" gameId="OW"/>
+                    <GameSection title="Dota 2" gameId="D2"/>
                 </div>
             </div>
         );
