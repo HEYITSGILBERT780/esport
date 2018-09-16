@@ -3,6 +3,7 @@ import {  Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import AllTeams from './pages/AllTeams';
+import AllPlayers from './pages/AllPlayers';
 
 class App extends Component {
   render() {
@@ -11,8 +12,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path="/AllTeams/:gameId" component={AllTeams} />
-          {/*<Route path="/OWAllTeams" key="ow-teams" component={AllTeams} />
-          <Route path="/DOTA2AllTeams" key="dota-teams" component={AllTeams} />*/}
+          <Route path="/AllPlayers/:gameId" component={AllPlayers} />
         </Switch>
       </div>  
     );

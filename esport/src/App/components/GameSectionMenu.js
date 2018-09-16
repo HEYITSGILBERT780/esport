@@ -17,42 +17,74 @@ class GameSectionMenu extends Component {
             <div>
                 {/* menu buttons for redirection */}
                 { 
-                    gameId === "LoL" && 
-                    <Link 
-                        to={{
-                            pathname: `/AllTeams/${gameId}`, 
-                            state: {
-                                title: gameTitle
-                            }
-                        }}>
-                        <button>View All Teams</button>
-                    </Link> 
+                    gameId === "LoL" &&
+                    <div>
+                        <Link 
+                            to={{
+                                pathname: `/AllTeams/${gameId}`, 
+                                state: {
+                                    title: gameTitle
+                                }
+                            }}>
+                            <button>View All Teams</button>
+                        </Link>
+                        <Link 
+                            to={{
+                                pathname: `/AllPlayers/${gameId}`, 
+                                state: {
+                                    title: gameTitle
+                                }
+                            }}>
+                            <button>View All Players</button>
+                        </Link>
+                    </div>
                 }
                 
                 { 
                     gameId === "OW" && 
-                    <Link to={{
-                        pathname: `/AllTeams/${gameId}`,
-                        state: {
-                            title: gameTitle
-                        }
-                    }}> 
-                    <button>View All Teams</button> 
-                    </Link> 
+                    <div>
+                        <Link to={{
+                            pathname: `/AllTeams/${gameId}`,
+                            state: {
+                                title: gameTitle
+                            }
+                        }}> 
+                        <button>View All Teams</button> 
+                        </Link>
+                        <Link 
+                            to={{
+                                pathname: `/AllPlayers/${gameId}`, 
+                                state: {
+                                    title: gameTitle
+                                }
+                            }}>
+                            <button>View All Players</button>
+                        </Link>
+                    </div>
                 }
                 
                 { 
                     gameId === "D2" && 
-                    <Link to={{
-                        pathname: `/AllTeams/${gameId}`,
-                        state: {
-                            title: gameTitle
-                        }
-                    }}> 
-                    <button>View All Teams</button> 
-                    </Link> 
+                    <div>
+                        <Link to={{
+                            pathname: `/AllTeams/${gameId}`,
+                            state: {
+                                title: gameTitle
+                            }
+                        }}> 
+                        <button>View All Teams</button> 
+                        </Link>
+                        <Link 
+                            to={{
+                                pathname: `/AllPlayers/${gameId}`, 
+                                state: {
+                                    title: gameTitle
+                                }
+                            }}>
+                            <button>View All Players</button>
+                        </Link>
+                    </div>
                 }
-                <button>View All Players</button>
             </div>
         );
     }
